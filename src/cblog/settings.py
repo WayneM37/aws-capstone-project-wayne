@@ -88,7 +88,7 @@ DATABASES = {
         'NAME': 'wayneRDS', # database name in RDS is written here
         'USER': 'admin', # database master username in RDS is written here
         'PASSWORD': config('wa12345678'),
-        'HOST': 'aynerds-1.ctxbsfui3zxy.us-east-1.rds.amazonaws.com',  # database endpoint is written here
+        'HOST': 'waynerds-1.ctxbsfui3zxy.us-east-1.rds.amazonaws.com',  # database endpoint is written here
         'PORT': '3306' # database port is written here
     }
 }
