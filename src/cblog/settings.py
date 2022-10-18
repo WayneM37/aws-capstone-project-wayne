@@ -85,9 +85,9 @@ WSGI_APPLICATION = 'cblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'wayneRDS', # database name in RDS is written here
+        'NAME': 'database1', # database name in RDS is written here
         'USER': 'admin', # database master username in RDS is written here
-        'PASSWORD': config('wa12345678'),
+        'PASSWORD': config('PASSWORD'),
         'HOST': 'waynerds-1.ctxbsfui3zxy.us-east-1.rds.amazonaws.com',  # database endpoint is written here
         'PORT': '3306' # database port is written here
     }
@@ -143,7 +143,7 @@ LOGIN_REDIRECT_URL = "blog:list"
 LOGIN_URL = "login"
 
 
-AWS_STORAGE_BUCKET_NAME = 'wayneport.site' # please enter your s3 bucket name
+AWS_STORAGE_BUCKET_NAME = 'wayneblog' # please enter your s3 bucket name
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_REGION_NAME = "us-east-1" # please enter your s3 region 
 AWS_DEFAULT_ACL = 'public-read'
